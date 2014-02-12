@@ -1,0 +1,62 @@
+{
+	"lvl_disabled": {
+		"message": "Disabled"
+	},
+	"lvl_base": {
+		"message": "Base"
+	},
+	"lvl_strict": {
+		"message": "Strict"
+	},
+	"lvl_base_popup": {
+		"message": "Base blocking"
+	},
+	"lvl_strict_popup": {
+		"message": "Strict blocking"
+	},
+	"txt_diff": {
+		"message": "What's the difference between strict and base blocking?"
+	},
+	"txt_diff2": {
+		"message": "Strict blocking uses additional CSS filters to hide more unwanted content. Base blocking uses only WebRequest API with list of known social elements."
+	},
+	"contact": {
+		"message": "Contact"
+	},
+	"autoupdate_chkbox": {
+		"message": "Automatically update blocking lists"
+	},
+	"autoupdate": {
+		"message": "Autoupdate"
+	},
+	"blocking_mode": {
+		"message": "Blocking mode"
+	},
+	"settings": {
+		"message": "Settings"
+	},
+	"strict_chkbox": {
+		"message": "Strict blocking"
+	},
+	"other": {
+		"message": "Other elements and widgets"
+	},
+	"donate": {
+		"message": "Donate"
+	},
+	"donate_desc": {
+		"message": "If you like this extension, you may support development by making a donation."
+	},
+	"enable_stopsocial": {
+		"message": "Enable StopSocial and use the following settings:"
+	},
+	"disable_stopsocial": {
+		"message": "Disable StopSocial"
+	},
+	"specific_settings": {
+		"message": "Use specific settings for this site"
+	},
+	"site_domain_for": {
+		"message": "for"
+	}
+}

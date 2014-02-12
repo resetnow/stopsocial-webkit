@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/options.css">
+		<title class="i18n" data-text="settings_title">StopSocial — Options</title>
+		<script type="text/javascript" src="js/e.js"></script>
+		<script type="text/javascript" src="js/locale.js"></script>
+		<script type="text/javascript" src="js/options.js"></script>
+	</head>
+	<body>
+		<header>
+			<h2>StopSocial</h2>
+		</header>
+		<main>
+			<h3 class="i18n" data-text="autoupdate">Autoupdate</h3>
+			<fieldset>
+				<p>
+					<input class="auto" name="update" id="enable-update" type="checkbox" />
+					<label for="enable-update" class="i18n"  data-text="autoupdate_chkbox">Automatically update blocking lists</label>
+				</p>
+			</fieldset>
+			<h3 class="i18n" data-text="blocking_mode">Default blocking mode</h3>
+			<fieldset>
+				<p>
+					<input id="enable-stopsocial" checked type="radio" value="true" name="enable" />
+					<label for="enable-stopsocial" class="i18n" data-text="enable_stopsocial">Enable StopSocial and use the following settings:</label>
+				</p>
+				<p class="indent">
+					<input id="enable-css-filter" type="checkbox" class="indent" name="enable-css-filter" />
+					<label for="enable-css-filter" class="i18n" data-text="lvl_strict_popup">Strict blocking</label>
+				</p>
+				<p class="indent">
+					<input id="enable-url-filter" type="checkbox" class="indent" name="enable-url-filter" />
+					<label for="enable-url-filter" class="i18n" data-text="lvl_base_popup">Base blocking</label>
+				</p>
+				<p>
+					<input id="disable-stopsocial" type="radio" value="false" name="enable" />
+					<label for="disable-stopsocial" class="i18n" data-text="disable_stopsocial">Disable StopSocial</label>
+				</p>
+			</fieldset>
+			<p>
+				<span class="light i18n" data-text="txt_diff">What's the difference between strict and base blocking?</span>&nbsp;<span data-text="txt_diff2" class="i18n">Strict blocking uses additional CSS filters to hide more unwanted content. Base blocking uses only Content Blocking API with list of known social elements.</span> 
+			</p>
+			<h3 class="i18n" data-text="edit_blocking_list">Edit blocklist</h3>
+			<p class="i18n" data-text="edit_blocking_list_desc">Uncheck elements you don't want to block.</p>
+			<fieldset>
+				<p id="blocklist-items-container">
+
+				</p>
+			</fieldset>
+			<h3 class="i18n" data-text="donate">Donate</h3>
+			<p class="i18n" data-text="donate_desc">
+				If you like this extension, you may support development by making a donation.
+			</p>
+			<p>
+				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+					<input type="hidden" name="cmd" value="_s-xclick">
+					<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+					">
+					<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+					<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+				</form>
+			</p>
+			<p id="yandex-money" class="hidden">
+				<iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/embed/donate.xml?uid=41001965189709&amp;default-sum=100&amp;targets=StopSocial+%E2%80%94+Donate&amp;target-visibility=on&amp;project-name=&amp;project-site=&amp;button-text=05&amp;hint=" width="450" height="104"></iframe>
+			</p>
+		</main>
+		<footer>
+			<p>
+				<a class="i18n" data-text="contact" href="mailto:vlad-mbx@ya.ru">Contact</a>
+			</p>
+			<p>
+				StopSocial <!-- @echo CONFIG_VERSION -->-<!-- @echo CONFIG_LOCALVERSION -->
+			</p>
+		</footer>
+	</body>
+</html>

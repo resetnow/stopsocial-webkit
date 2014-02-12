@@ -1,0 +1,21 @@
+{
+  "name": "stopsocial-webkit",
+  "version": "2.1.0",
+  "description": "StopSocial is Adblock-like extension aimed to remove social and share widgets from webpages",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vladislav Ivanov <vlad-mbx@ya.ru>",
+  "license": "MIT",
+  "devDependencies": {
+    "preprocess": "~2.0.0",
+    "grunt": "~0.4.2",
+    "grunt-contrib-less": "~0.9.0",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-contrib-uglify": "~0.3.2",
+    "grunt-preprocess": "~4.0.0",
+    "grunt-contrib-compress": "~0.6.1",
+    "grunt-contrib-clean": "~0.5.0"
+  }
+}

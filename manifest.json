@@ -1,0 +1,31 @@
+{
+	"manifest_version": 2,
+	
+	"name": "StopSocial",
+	"version": "2.1",
+	"default_locale": "en",
+	"description": "StopSocial blocks social content in your browser.",
+	
+	"background": {
+		"scripts": [
+			"js/main.js",
+			"js/crypto.js",
+			"js/update.js"
+		]
+	},
+	
+	"options_page": "options.html",
+	
+	"permissions": ["tabs", "http://*/*", "https://*/*", "webRequest", "webRequestBlocking", "webNavigation"],
+	"icons": {
+		"16": "icon/16.png",
+		"48": "icon/48.png",
+		"128": "icon/128.png"
+	},
+	
+	"browser_action": {
+		"default_title": "StopSocial",
+		"default_popup": "popup.html",
+		"default_icon": "icon/19.png"
+	}
+}

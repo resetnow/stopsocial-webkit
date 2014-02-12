@@ -1,0 +1,62 @@
+{
+	"lvl_disabled": {
+		"message": "Отключено"
+	},
+	"lvl_base": {
+		"message": "Базовый"
+	},
+	"lvl_strict": {
+		"message": "Расширенный"
+	},
+	"lvl_base_popup": {
+		"message": "Базовая блокировка"
+	},
+	"lvl_strict_popup": {
+		"message": "Расширенная блокировка"
+	},
+	"txt_diff": {
+		"message": "В чем отличие расширенного и базового блокирования?"
+	},
+	"txt_diff2": {
+		"message": "Расширенный режим использует дополнительные CSS-фильтры, чтобы блокировать больше нежелательного контента. Базовый режим основан на Chrome Web Request API и на списке известных социальных модулей."
+	},
+	"contact": {
+		"message": "Для отзывов и предложений"
+	},
+	"autoupdate_chkbox": {
+		"message": "Включить автоматическое обновление списков блокировки"
+	},
+	"autoupdate": {
+		"message": "Обновления"
+	},
+	"blocking_mode": {
+		"message": "Режим блокирования"
+	},
+	"settings": {
+		"message": "Настройки"
+	},
+	"strict_chkbox": {
+		"message": "Расширенная блокировка"
+	},
+	"other": {
+		"message": "Прочее"
+	},
+	"donate": {
+		"message": "Поддержать разработку"
+	},
+	"donate_desc": {
+		"message": "Если вам понравилось расширение, вы можете сделать пожертвование и поддержать его разработку."
+	},
+	"enable_stopsocial": {
+		"message": "Включить StopSocial и использовать следующие настройки:"
+	},
+	"disable_stopsocial": {
+		"message": "Отключить StopSocial"
+	},
+	"specific_settings": {
+		"message": "Отдельные настройки для этого сайта"
+	},
+	"site_domain_for": {
+		"message": "—"
+	}
+}

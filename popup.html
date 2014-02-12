@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>StopSocial</title>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="css/popup.css" />
+		<script type="text/javascript" src="js/e.js"></script>
+		<script type="text/javascript" src="js/locale.js"></script>
+		<script type="text/javascript" src="js/popup.js"></script>
+	</head>
+	<body>
+		<header>
+			<h2>StopSocial</h2>
+			<h4><span class="i18n" data-text="settings">Settings</span>&nbsp;<span data-text="site_domain_for" id="site-domain-for" class="i18n hidden">for</span>&nbsp;<span id="site-domain" class="hidden"></span></h4>
+		</header>
+		<main>
+			<fieldset id="settings-container">
+				<div>
+					<input checked id="mode-2" type="checkbox" name="mode" class="control"/>
+					<label for="mode-2" class="i18n" data-text="lvl_strict_popup">Strict blocking</label>
+				</div>
+				<div>
+					<input checked id="mode-1" type="checkbox" name="mode" class="control"/>
+					<label for="mode-1" class="i18n" data-text="lvl_base_popup">Base blocking</label>
+				</div>
+			</fieldset>
+			<fieldset id="site-specific-container">
+				<input id="site-specific" type="checkbox" name="site-specific" class="control"/>
+				<label for="site-specific" class="i18n" data-text="specific_settings">Use specific settings for this site</label>
+			</fieldset>
+			<fieldset>
+				<input id="disable-stopsocial" type="checkbox" />
+				<label for="disable-stopsocial" class="i18n" data-text="disable_stopsocial">Disable StopSocial</label>
+			</fieldset>
+		</main>
+		<footer>
+			<a id="close-link">×</a>
+		</footer>
+	</body>
+</html>
