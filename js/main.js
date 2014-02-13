@@ -109,7 +109,11 @@ var URLBlocklist = function() {
 		if  (stopSocial.URLBlocklist.checkDomain(
 				stopSocial.URLBlocklist.tabs[details.tabId]
 			))
-			return { redirectUrl: "about:blank" };
+			return { 
+				redirectUrl:	(details.type != 'image') ?
+								'about:blank' :
+								'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACklEQVR4nGMAAQAABQABDQottAAAAABJRU5ErkJggg=='
+				};
 	};
 	this.onTabRemovedHandler = function(tabId) {
 		delete stopSocial.URLBlocklist.tabs[tabId];
