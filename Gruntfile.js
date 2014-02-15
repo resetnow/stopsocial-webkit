@@ -3,12 +3,14 @@ module.exports = function(grunt) {
 		pkg: grunt.file.readJSON('package.json'),
 
 		less: {
-			options: {
-				cleancss: true
-			},
-			files: {
-				"css/options.css": ["less/options.less"],
-				"css/popup.css": ["less/popup.less"]
+			all: {
+				options: {
+					cleancss: true
+				},
+				files: {
+					"css/options.css": ["less/options.less"],
+					"css/popup.css": ["less/popup.less"]
+				}
 			}
 		},
 
