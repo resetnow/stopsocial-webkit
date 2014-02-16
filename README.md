@@ -5,6 +5,7 @@ StopSocial is an Adblock-like extension aimed to remove social and share widgets
 ##Download##
 
 [Chrome Webstore][1]
+
 [Opera Addons][2]
 
   [1]: https://chrome.google.com/webstore/detail/stopsocial/pdonaicgpiillaafjgcaaglhjemjnnoh
