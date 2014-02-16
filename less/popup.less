@@ -24,8 +24,18 @@ body {
     font: @base-font-size arial, sans-serif;
     width: 250px;
 	color: @base-font-color;
-	background: @base-background-color;
-    -webkit-user-select: none;
+	-webkit-user-select: none;
+	&, div.container {
+		background: @base-background-color;
+    }
+}
+
+button {
+	margin: 2px 0;
+}
+
+.report-actions {
+	padding: @options-paragraph-margin 0 0;
 }
 
 a {

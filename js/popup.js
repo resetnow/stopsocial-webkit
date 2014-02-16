@@ -136,4 +136,34 @@ e(function() {
 			domainHasSettings
 		);
 	});
+	e("#report-site").click(function() {
+		e(".container").hide();
+		e("#report-site-popup").show();
+	});
+	e("#report-cancel, #report-done").click(function() {
+		e(".container").hide();
+		e("#main-popup").show();
+	});
+	e("#report-continue").click(function() {
+		chrome.tabs.query({
+			currentWindow: true,
+			active: true
+		},
+		function(tab) {
+			var
+				url = tab[0].url,
+				request = new XMLHttpRequest(),
+				callback = function() {
+					e("#report-site-domain").html(bg.getDomain(url));
+					e(".container").hide();
+					e("#report-site-done").show();
+				};
+			
+			request.open('POST', 'http://resetnow.ru/stopsocial/report', true);
+			request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+			request.onload = callback;
+			request.onerror = callback;
+			request.send("url=" + encodeURI(url));
+		});
+	});
 });

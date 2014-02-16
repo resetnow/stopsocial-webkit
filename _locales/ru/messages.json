@@ -58,5 +58,26 @@
 	},
 	"site_domain_for": {
 		"message": "—"
+	},
+	"report_site": {
+		"message": "Сообщить о сайте"
+	},
+	"report_site_text": {
+		"message": "Если социальные кнопки все еще отображаются, вы можете отправить адрес страницы разработчику, и дополнительные правила блокировки будут включены в следующее обновление."
+	},
+	"report_continue": {
+		"message": "Продолжить"
+	},
+	"report_cancel": {
+		"message": "Отменить"
+	},
+	"report_done": {
+		"message": "OK"
+	},
+	"report_site_done_1": {
+		"message": "Спасибо! Информация о сайте "
+	},
+	"report_site_done_2": {
+		"message": " отправлена."
 	}
 }

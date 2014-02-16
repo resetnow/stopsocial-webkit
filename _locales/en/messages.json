@@ -58,5 +58,26 @@
 	},
 	"site_domain_for": {
 		"message": "for"
+	},
+	"report_site": {
+		"message": "Report site"
+	},
+	"report_site_text": {
+		"message": "If social buttons still appear, you can report this site, and additional blocking rules will be added in the next update."
+	},
+	"report_continue": {
+		"message": "Continue"
+	},
+	"report_cancel": {
+		"message": "Cancel" 
+	},
+	"report_done": {
+		"message": "OK"
+	},
+	"report_site_done_1": {
+		"message": "Thank you! "
+	},
+	"report_site_done_2": {
+		"message": " has been reported."
 	}
 }

@@ -9,32 +9,58 @@
 		<script type="text/javascript" src="js/popup.js"></script>
 	</head>
 	<body>
-		<header>
-			<h2>StopSocial</h2>
-			<h4><span class="i18n" data-text="settings">Settings</span>&nbsp;<span data-text="site_domain_for" id="site-domain-for" class="i18n hidden">for</span>&nbsp;<span id="site-domain" class="hidden"></span></h4>
-		</header>
-		<main>
-			<fieldset id="settings-container">
-				<div>
-					<input checked id="mode-2" type="checkbox" name="mode" class="control"/>
-					<label for="mode-2" class="i18n" data-text="lvl_strict_popup">Strict blocking</label>
+		<div class="container" id="main-popup">
+			<header>
+				<h2>StopSocial</h2>
+				<h4><span class="i18n" data-text="settings">Settings</span>&nbsp;<span data-text="site_domain_for" id="site-domain-for" class="i18n hidden">for</span>&nbsp;<span id="site-domain" class="hidden"></span></h4>
+			</header>
+			<main>
+				<fieldset id="settings-container">
+					<div>
+						<input checked id="mode-2" type="checkbox" name="mode" class="control"/>
+						<label for="mode-2" class="i18n" data-text="lvl_strict_popup">Strict blocking</label>
+					</div>
+					<div>
+						<input checked id="mode-1" type="checkbox" name="mode" class="control"/>
+						<label for="mode-1" class="i18n" data-text="lvl_base_popup">Base blocking</label>
+					</div>
+				</fieldset>
+				<fieldset id="site-specific-container">
+					<input id="site-specific" type="checkbox" name="site-specific" class="control"/>
+					<label for="site-specific" class="i18n" data-text="specific_settings">Use specific settings for this site</label>
+				</fieldset>
+				<fieldset>
+					<input id="disable-stopsocial" type="checkbox" />
+					<label for="disable-stopsocial" class="i18n" data-text="disable_stopsocial">Disable StopSocial</label>
+				</fieldset>
+				<fieldset>
+					<button class="i18n" data-text="report_site" id="report-site">Report site</button>
+				</fieldset>
+			</main>
+		</div>
+		<div class="container hidden" id="report-site-popup">
+			<header>
+				<h2 class="i18n" data-text="report_site">Report site</h2>
+			</header>
+			<main>
+				<p class="i18n" data-text="report_site_text">If social buttons still appear, you can report this site, and additional blocking rules will be added in the next update.</p>
+				<div class="report-actions">
+					<button id="report-continue" class="report-form i18n" data-text="report_continue">Continue</button>
+					<button id="report-cancel" class="report-form i18n" data-text="report_cancel">Cancel</button>
 				</div>
-				<div>
-					<input checked id="mode-1" type="checkbox" name="mode" class="control"/>
-					<label for="mode-1" class="i18n" data-text="lvl_base_popup">Base blocking</label>
+			</main>
+		</div>
+		<div class="container hidden" id="report-site-done">
+			<header>
+				<h2 class="i18n" data-text="report_site">Report site</h2>
+			</header>
+			<main>
+				<p><span class="i18n" data-text="report_site_done_1">Thank you! </span><span id="report-site-domain"></span><span class="i18n" data-text="report_site_done_2"> has been reported.</span></p>
+				<div class="report-actions">
+					<button id="report-done" class="report-form i18n" data-text="report_done">OK</button>
 				</div>
-			</fieldset>
-			<fieldset id="site-specific-container">
-				<input id="site-specific" type="checkbox" name="site-specific" class="control"/>
-				<label for="site-specific" class="i18n" data-text="specific_settings">Use specific settings for this site</label>
-			</fieldset>
-			<fieldset>
-				<input id="disable-stopsocial" type="checkbox" />
-				<label for="disable-stopsocial" class="i18n" data-text="disable_stopsocial">Disable StopSocial</label>
-			</fieldset>
-		</main>
-		<footer>
-			<a id="close-link">×</a>
-		</footer>
+			</main>
+		</div>
+		<a id="close-link">×</a>
 	</body>
 </html>
